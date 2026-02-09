@@ -1,3 +1,5 @@
+![Deploy to GitHub Pages](https://github.com/firaen22/premium-planner/actions/workflows/deploy.yml/badge.svg)
+
 # Premium Planner
 
 A React application for premium planning, built with Vite and TypeScript.
