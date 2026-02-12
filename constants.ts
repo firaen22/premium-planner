@@ -10,11 +10,15 @@ export const REBATE_TIERS: RebateTier[] = [
   { min: 200000, max: Infinity, rateBasic: 0.18, rateBundle: 0.21, level: TierLevel.VVIP },
 ];
 
-export const PREPAYMENT_RATE = 0.043; // 4.3% p.a.
+export const PREPAYMENT_RATE_1YEAR = 0.043; // 4.3% p.a. - Always 4.3% for 1 year
+export const PREPAYMENT_RATE_4YEAR_LOW = 0.038; // 3.8% p.a. - < 200k USD
+export const PREPAYMENT_RATE_4YEAR_HIGH = 0.040; // 4.0% p.a. - >= 200k USD
+export const PREPAYMENT_THRESHOLD_USD = 200000;
+
 // Interest Factors (Multiplier of Annual Premium)
-// 1 Year Prepay: 1 year of interest on 1 premium = 1 * 4.3%
+// 1 Year Prepay: 1 year of interest on 1 premium = 1 * rate
 // 4 Year Prepay: Interest on 4,3,2,1 premiums = (4+3+2+1) = 10 units of annual interest
-export const PREPAYMENT_FACTOR_1YEAR = 1; 
+export const PREPAYMENT_FACTOR_1YEAR = 1;
 export const PREPAYMENT_FACTOR_4YEAR = 10;
 
 export const EXCHANGE_RATE_HKD_USD = 8.0; // 1 USD = 8 HKD

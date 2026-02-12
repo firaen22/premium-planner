@@ -28,4 +28,5 @@ export interface CalculationResult {
   nextTier?: RebateTier;
   gapToNextTier: number;
   potentialExtraRebate: number;
+  effectivePrepaymentRate: number;
 }
